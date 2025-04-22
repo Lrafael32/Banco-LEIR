@@ -1,0 +1,151 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Cor de fundo leve */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno da página */
+}
+
+/* Título principal */
+h1 {
+    color: #004080; /* Azul escuro */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+h2 {
+    color: #0066cc; /* Azul médio */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos padrão */
+p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Estilo da barra de navegação */
+nav {
+    background-color: #004080;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Lista principal do menu */
+.menu {
+    list-style: none; /* Remove marcadores */
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre itens do menu */
+}
+
+/* Cada item do menu */
+.menu li {
+    position: relative;
+}
+
+/* Links do menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+/* Submenu oculto por padrão */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #004080;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+/* Mostra submenu ao passar o mouse */
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Espaçamento entre itens do submenu */
+.submenu li {
+    margin-bottom: 10px;
+}
+
+/* Remove margem do último item */
+.submenu li:last-child {
+    margin-bottom: 0;
+}
+
+div{
+    color: white;
+}
+
+/* Imagens do banner */
+#banner,
+#banner2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Bloco com informações (quem somos, documentos, etc.) */
+fieldset {
+    background-color: #ffffff;
+    border: 2px solid #004080;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Título do fieldset */
+legend {
+    font-weight: bold;
+    color: #004080;
+    padding: 0 10px;
+}
+
+/* Estilização dos títulos internos */
+#bem\:vindo,
+#documentos,
+#prazo {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Campos de texto do formulário */
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Linha horizontal para separar seções */
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
